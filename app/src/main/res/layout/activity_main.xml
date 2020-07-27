@@ -7,15 +7,39 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_height="283dp" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="시작" />
+        android:text="동영상 시작" />
 
-    <com.google.android.youtube.player.YouTubePlayerView
-        android:id="@+id/playerView"
+    <TextView
+        android:id="@+id/blank"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="178dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="추천해드린 노래를 평가해주세요!"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Good" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bad" />
 
 </LinearLayout>
